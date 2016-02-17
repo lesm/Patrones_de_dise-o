@@ -12,7 +12,9 @@ Bluej Context File (*.ctxt)
 *.swp
 *.swo
 
+#Ignorar carpeta doc generada por Bluej
 
+doc/*
 
 
 

@@ -9,7 +9,7 @@ public abstract class DatoCompuesto{
     
     private double x;
     private double y;
-    private ModoSumar operacion;
+    protected ModoSumar operacion;
     private String nombre;
     
     public DatoCompuesto(double x, double y){
@@ -17,8 +17,6 @@ public abstract class DatoCompuesto{
         this.y = y;
         
     }
-    
-    public abstract void fijarSuma();
     
     public String imprimir(char caracter){
         return "Punto "+getX()+""+caracter+""+getY()+"";
@@ -34,10 +32,6 @@ public abstract class DatoCompuesto{
     
     public ModoSumar getOperacion(){
         return operacion;
-    }
-    
-    public void setOperacion(DatoCompuesto obj){
-        operacion = new SumaPunto(obj);
     }
     
     public void setNombre(String nombre){
