@@ -35,8 +35,7 @@ public class PuntoTest
         DatoCompuesto punto = new Punto(coordenadaX);
         assertThat(punto, instanceOf(Punto.class));
     }
-    
-    
+        
     @Test 
     public void testGetX(){
         double coordenadaX = 5F;
@@ -49,6 +48,15 @@ public class PuntoTest
         double coordenadaY = 3F;
         DatoCompuesto punto = new Punto(coordenadaY);
         assertEquals(3F,punto.getY(),0.001);        
+    }
+    
+    @Test
+    public void testGetX_and_GetY(){
+        double coordenadaX = 3F;
+        double coordenadaY = 5F;
+        DatoCompuesto punto = new Punto(coordenadaX,coordenadaY);
+        assertEquals(3F,punto.getX(),0.001);                
+        assertEquals(5F,punto.getY(),0.001);                
     }
 
 }

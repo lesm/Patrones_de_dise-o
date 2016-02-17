@@ -15,6 +15,11 @@ public abstract class DatoCompuesto{
         this.y = x;
     }
     
+    public DatoCompuesto(double x, double y){
+        this.x = x;
+        this.y = y;
+    }
+    
         public double getX(){
         return x;
     }
