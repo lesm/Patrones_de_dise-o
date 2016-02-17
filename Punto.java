@@ -1,0 +1,10 @@
+
+/**
+ * Write a description of class Punto here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Punto extends DatoCompuesto{
+  
+}
