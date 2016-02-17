@@ -84,6 +84,11 @@ public class PuntoTest{
         assertTrue((puntoTres.getX() == nuevoPunto.getX()) && puntoTres.getY() == nuevoPunto.getY());       
 
     }
-     
+    
+    @Test
+    public void testImprimir(){
+        punto.setNombre("Punto");
+        assertEquals("Punto 5.0,3.0",punto.imprimir(','));
+    }
     
 }
