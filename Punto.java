@@ -7,12 +7,8 @@
  */
 public class Punto extends DatoCompuesto{
 
-    public Punto(double coordenadaX){
-        super(coordenadaX);
-    }
-    
     public Punto(double coordenadaX, double coordenadaY){
-         super(coordenadaX, coordenadaY);
+        super(coordenadaX, coordenadaY);
     }
     
 }

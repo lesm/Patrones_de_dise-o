@@ -10,11 +10,6 @@ public abstract class DatoCompuesto{
     private double x;
     private double y;
     
-    public DatoCompuesto(double x){
-        this.x = x;
-        this.y = x;
-    }
-    
     public DatoCompuesto(double x, double y){
         this.x = x;
         this.y = y;
