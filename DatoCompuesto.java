@@ -8,13 +8,18 @@
 public abstract class DatoCompuesto{
     
     private double x;
+    private double y;
     
     public DatoCompuesto(double x){
         this.x = x;
+        this.y = x;
     }
     
-    public double getX(){
+        public double getX(){
         return x;
     }
     
+    public double getY(){
+        return y;
+    }
 }

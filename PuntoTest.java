@@ -43,5 +43,12 @@ public class PuntoTest
         DatoCompuesto punto = new Punto(coordenadaX);
         assertEquals(5F,punto.getX(),0.001);        
     }
+    
+    @Test
+    public void testGetY(){
+        double coordenadaY = 3F;
+        DatoCompuesto punto = new Punto(coordenadaY);
+        assertEquals(3F,punto.getY(),0.001);        
+    }
 
 }
