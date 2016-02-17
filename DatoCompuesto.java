@@ -7,4 +7,14 @@
  */
 public abstract class DatoCompuesto{
     
+    private double x;
+    
+    public DatoCompuesto(double x){
+        this.x = x;
+    }
+    
+    public double getX(){
+        return x;
+    }
+    
 }

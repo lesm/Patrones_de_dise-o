@@ -6,5 +6,9 @@
  * @version (a version number or a date)
  */
 public class Punto extends DatoCompuesto{
-  
+
+    public Punto(double coordenadaX){
+        super(coordenadaX);
+    }
+    
 }

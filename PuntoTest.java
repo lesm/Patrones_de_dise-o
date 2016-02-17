@@ -31,8 +31,17 @@ public class PuntoTest
     
     @Test
     public void testInstanceOfTipoPunto(){      
-        DatoCompuesto punto = new Punto();
+        double coordenadaX = 5F;
+        DatoCompuesto punto = new Punto(coordenadaX);
         assertThat(punto, instanceOf(Punto.class));
+    }
+    
+    
+    @Test 
+    public void testGetX(){
+        double coordenadaX = 5F;
+        DatoCompuesto punto = new Punto(coordenadaX);
+        assertEquals(5F,punto.getX(),0.001);        
     }
 
 }
