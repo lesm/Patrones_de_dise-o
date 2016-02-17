@@ -9,15 +9,17 @@ public abstract class DatoCompuesto{
     
     private double x;
     private double y;
-    private SumaPunto operacion;
+    private ModoSumar operacion;
     
     public DatoCompuesto(double x, double y){
         this.x = x;
         this.y = y;
-        operacion = new SumaPunto();
+        
     }
     
-        public double getX(){
+    public abstract void fijarSuma();
+    
+    public double getX(){
         return x;
     }
     
@@ -25,7 +27,12 @@ public abstract class DatoCompuesto{
         return y;
     }
     
-    public SumaPunto getOperacion(){
+    public ModoSumar getOperacion(){
         return operacion;
     }
+    
+    public void setOperacion(DatoCompuesto obj){
+        operacion = new SumaPunto(obj);
+    }
+    
 }

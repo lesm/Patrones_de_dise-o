@@ -11,5 +11,9 @@ public class Punto extends DatoCompuesto{
         super(coordenadaX, coordenadaY);
     }
     
-   
+    @Override
+    public void fijarSuma(){
+        setOperacion(this);
+    }     
+    
 }

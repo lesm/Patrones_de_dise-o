@@ -56,19 +56,34 @@ public class PuntoTest{
     }
     
     @Test
-    public void testSumarDosPuntos() throws NullPointerException {
+    public void testSumarDosPuntos() {
         DatoCompuesto puntoUno = new Punto(5F,8F);
         DatoCompuesto puntoDos = new Punto(2F,5F);
         
-        //puntoUno.fijarSuma();
+        puntoUno.fijarSuma();
         
         DatoCompuesto puntoTres = new Punto(7F,13F);
         DatoCompuesto nuevoPunto;
         nuevoPunto = puntoUno.getOperacion().sumar(puntoDos);
 
-        assertTrue((puntoTres.getX() == nuevoPunto.getX()) && puntoTres.getY() == nuevoPunto.getY());
-       
+        assertTrue((puntoTres.getX() == nuevoPunto.getX()) && puntoTres.getY() == nuevoPunto.getY());       
 
     }
+    
+    @Test
+    public void testSumarOtrosDosPuntos() {
+        DatoCompuesto puntoUno = new Punto(15F,8F);
+        DatoCompuesto puntoDos = new Punto(2F,15F);
+        
+        puntoUno.fijarSuma();
+        
+        DatoCompuesto puntoTres = new Punto(17F,23F);
+        DatoCompuesto nuevoPunto;
+        nuevoPunto = puntoUno.getOperacion().sumar(puntoDos);
 
+        assertTrue((puntoTres.getX() == nuevoPunto.getX()) && puntoTres.getY() == nuevoPunto.getY());       
+
+    }
+     
+    
 }
