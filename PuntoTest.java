@@ -54,5 +54,21 @@ public class PuntoTest{
         assertEquals(5F,punto.getX(),0.001);                
         assertEquals(3F,punto.getY(),0.001);                
     }
+    
+    @Test
+    public void testSumarDosPuntos() throws NullPointerException {
+        DatoCompuesto puntoUno = new Punto(5F,8F);
+        DatoCompuesto puntoDos = new Punto(2F,5F);
+        
+        //puntoUno.fijarSuma();
+        
+        DatoCompuesto puntoTres = new Punto(7F,13F);
+        DatoCompuesto nuevoPunto;
+        nuevoPunto = puntoUno.getOperacion().sumar(puntoDos);
+
+        assertTrue((puntoTres.getX() == nuevoPunto.getX()) && puntoTres.getY() == nuevoPunto.getY());
+       
+
+    }
 
 }

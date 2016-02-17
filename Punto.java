@@ -11,4 +11,5 @@ public class Punto extends DatoCompuesto{
         super(coordenadaX, coordenadaY);
     }
     
+   
 }
