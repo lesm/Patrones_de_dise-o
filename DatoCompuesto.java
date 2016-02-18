@@ -19,7 +19,7 @@ public abstract class DatoCompuesto{
     }
     
     public String imprimir(char caracter){
-        return "Punto "+getX()+""+caracter+""+getY()+"";
+        return nombre+" "+getX()+""+caracter+""+getY();
     }
     
     public double getX(){

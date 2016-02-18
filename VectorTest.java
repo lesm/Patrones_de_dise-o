@@ -72,5 +72,13 @@ public class VectorTest{
         assertTrue(24.0 == nuevoVector.getX() && 20.0 == nuevoVector.getY());
         
     }
+    
+    @Test
+    public void testImprimir(){
+        DatoCompuesto vector = new Vector(10F,6F);
+        vector.setNombre("Vector");
+        
+        assertEquals("Vector 10.0@6.0",vector.imprimir('@'));
+    }
         
 }
