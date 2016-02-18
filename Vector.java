@@ -9,6 +9,7 @@ public class Vector extends DatoCompuesto{
     
     public Vector(double coordenadaX, double coordenadaY ){
         super(coordenadaX,coordenadaY);
+        operacion = new SumaVector(this);
     }
     
     public double getMagnitud(){

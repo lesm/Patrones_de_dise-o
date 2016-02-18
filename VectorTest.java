@@ -48,4 +48,29 @@ public class VectorTest{
         assertEquals(10, (int) vector.getMagnitud(),0.001);
     }
     
+    @Test
+    public void testSumarDosVectores(){
+        DatoCompuesto vectorUno = new Vector(6F,8F);
+        DatoCompuesto vectorDos = new Vector(8F,2F);
+        
+        DatoCompuesto nuevoVector;
+        nuevoVector = vectorUno.operacion.sumar(vectorDos);
+        
+        assertTrue(14.0 == nuevoVector.getX() && 10.0 == nuevoVector.getY());
+        
+    }
+    
+    
+    @Test
+    public void testDosSumarDosVectores(){
+        DatoCompuesto vectorUno = new Vector(16F,8F);
+        DatoCompuesto vectorDos = new Vector(8F,12F);
+        
+        DatoCompuesto nuevoVector;
+        nuevoVector = vectorUno.operacion.sumar(vectorDos);
+        
+        assertTrue(24.0 == nuevoVector.getX() && 20.0 == nuevoVector.getY());
+        
+    }
+        
 }
