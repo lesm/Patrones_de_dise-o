@@ -9,5 +9,6 @@ public class Fraccion extends DatoCompuesto{
     
     public Fraccion(double numerador, double denominador){
         super(numerador,denominador);
+        operacion = new SumaFraccion(this);
     }
 }

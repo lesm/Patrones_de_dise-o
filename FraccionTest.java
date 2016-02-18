@@ -35,4 +35,27 @@ public class FraccionTest{
         
         assertThat(fraccion,instanceOf(Fraccion.class));
     }
+    
+    @Test
+    public void testSumarDosFracciones(){
+        DatoCompuesto fraccionUno = new Fraccion(5F,2F);
+        DatoCompuesto fraccionDos = new Fraccion(3F,2F);
+        
+        DatoCompuesto nuevaFraccion;
+        nuevaFraccion = fraccionUno.operacion.sumar(fraccionDos);
+        
+        assertTrue(8 == nuevaFraccion.getX() && 2 == nuevaFraccion.getY());
+    }
+    
+    @Test
+    public void testDosSumarDosFracciones(){
+        DatoCompuesto fraccionUno = new Fraccion(8F,3F);
+        DatoCompuesto fraccionDos = new Fraccion(5F,3F);
+        
+        DatoCompuesto nuevaFraccion;
+        nuevaFraccion = fraccionUno.operacion.sumar(fraccionDos);
+        
+        assertTrue(13 == nuevaFraccion.getX() && 3 == nuevaFraccion.getY());
+        
+    }
 }
