@@ -58,4 +58,13 @@ public class FraccionTest{
         assertTrue(13 == nuevaFraccion.getX() && 3 == nuevaFraccion.getY());
         
     }
+    
+     
+    @Test
+    public void testImprimir(){
+        DatoCompuesto fraccion = new Fraccion(11F,3F);
+        fraccion.setNombre("Fracción");
+        
+        assertEquals("Fracción 11.0/3.0",fraccion.imprimir('/'));
+    }
 }
