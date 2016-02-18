@@ -35,5 +35,17 @@ public class VectorTest{
         DatoCompuesto vector = new Vector(coordenadaX,coordenadaY);
         assertThat(vector,instanceOf(Vector.class));
     }
-
+    
+    @Test
+    public void testGetMagnitud(){
+        Vector vector = new Vector(5F,10F);        
+        assertEquals(11, (int) vector.getMagnitud(),0.001);
+    }
+    
+    @Test
+    public void testDosGetMagnitud(){
+        Vector vector = new Vector(8F,7F);        
+        assertEquals(10, (int) vector.getMagnitud(),0.001);
+    }
+    
 }
