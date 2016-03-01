@@ -54,7 +54,7 @@ public class VectorTest{
         DatoCompuesto vectorDos = new Vector(8F,2F);
         
         DatoCompuesto nuevoVector;
-        nuevoVector = vectorUno.operacion.sumar(vectorDos);
+        nuevoVector = vectorUno.modoSuma.sumar(vectorDos);
         
         assertTrue(14.0 == nuevoVector.getX() && 10.0 == nuevoVector.getY());
         
@@ -67,7 +67,7 @@ public class VectorTest{
         DatoCompuesto vectorDos = new Vector(8F,12F);
         
         DatoCompuesto nuevoVector;
-        nuevoVector = vectorUno.operacion.sumar(vectorDos);
+        nuevoVector = vectorUno.modoSuma.sumar(vectorDos);
         
         assertTrue(24.0 == nuevoVector.getX() && 20.0 == nuevoVector.getY());
         

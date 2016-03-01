@@ -9,7 +9,7 @@ public abstract class DatoCompuesto{
     
     private double x;
     private double y;
-    protected ModoSumar operacion;
+    protected ModoSumar modoSuma;
     protected ModoEscalar modoEscalar;
     private String nombre;
     
@@ -29,10 +29,6 @@ public abstract class DatoCompuesto{
     
     public double getY(){
         return y;
-    }
-    
-    public ModoSumar getOperacion(){
-        return operacion;
     }
     
     public void setNombre(String nombre){

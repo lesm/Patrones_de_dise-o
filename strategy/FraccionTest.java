@@ -42,7 +42,7 @@ public class FraccionTest{
         DatoCompuesto fraccionDos = new Fraccion(3F,2F);
         
         DatoCompuesto nuevaFraccion;
-        nuevaFraccion = fraccionUno.operacion.sumar(fraccionDos);
+        nuevaFraccion = fraccionUno.modoSuma.sumar(fraccionDos);
         
         assertTrue(8 == nuevaFraccion.getX() && 2 == nuevaFraccion.getY());
     }
@@ -53,7 +53,7 @@ public class FraccionTest{
         DatoCompuesto fraccionDos = new Fraccion(5F,3F);
         
         DatoCompuesto nuevaFraccion;
-        nuevaFraccion = fraccionUno.operacion.sumar(fraccionDos);
+        nuevaFraccion = fraccionUno.modoSuma.sumar(fraccionDos);
         
         assertTrue(13 == nuevaFraccion.getX() && 3 == nuevaFraccion.getY());
         

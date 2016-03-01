@@ -62,7 +62,7 @@ public class PuntoTest{
         
         DatoCompuesto puntoTres = new Punto(7F,13F);
         DatoCompuesto nuevoPunto;
-        nuevoPunto = puntoUno.operacion.sumar(puntoDos);
+        nuevoPunto = puntoUno.modoSuma.sumar(puntoDos);
 
         assertTrue((puntoTres.getX() == nuevoPunto.getX()) && puntoTres.getY() == nuevoPunto.getY());       
 
@@ -75,7 +75,7 @@ public class PuntoTest{
             
         DatoCompuesto puntoTres = new Punto(17F,23F);
         DatoCompuesto nuevoPunto;
-        nuevoPunto = puntoUno.getOperacion().sumar(puntoDos);
+        nuevoPunto = puntoUno.modoSuma.sumar(puntoDos);
 
         assertTrue((puntoTres.getX() == nuevoPunto.getX()) && puntoTres.getY() == nuevoPunto.getY());       
 
