@@ -10,6 +10,7 @@ public abstract class DatoCompuesto{
     private double x;
     private double y;
     protected ModoSumar operacion;
+    protected ModoEscalar modoEscalar;
     private String nombre;
     
     public DatoCompuesto(double x, double y){

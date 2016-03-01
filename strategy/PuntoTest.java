@@ -87,4 +87,24 @@ public class PuntoTest{
         assertEquals("Punto 5.0,3.0",punto.imprimir(','));
     }
     
+    
+    @Test
+    public void testUnoMetedoEscalar(){
+        DatoCompuesto punto = new Punto(10F,3F);
+        DatoCompuesto test  = punto.modoEscalar.escalar(3);  
+        
+        assertEquals(30,test.getX(),0.001);
+        assertEquals(9,test.getY(),0.001);        
+    }
+    
+    @Test 
+    public void testDosMetodoEscalar(){
+        DatoCompuesto punto = new Punto(5F,6F);
+        DatoCompuesto test  = punto.modoEscalar.escalar(5);
+        
+        assertEquals(25,test.getX(),0.001);
+        assertEquals(30,test.getY(),0.001);
+        
+    }
+    
 }
