@@ -3,7 +3,7 @@
 *.class
 
 #Ignorar archivos Bluej
-Bluej Context File (*.ctxt)
+#Bluej Context File (*.ctxt)
 
 *.ctxt
 
@@ -16,7 +16,9 @@ Bluej Context File (*.ctxt)
 
 doc/*
 
+#Ignorar archivos *.bluej 
 
+*.bluej
 
 
 
