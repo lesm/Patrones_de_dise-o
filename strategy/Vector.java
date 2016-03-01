@@ -7,13 +7,10 @@
  */
 public class Vector extends DatoCompuesto{
     
-    public Vector(double coordenadaX, double coordenadaY ){
-        super(coordenadaX,coordenadaY);
+    public Vector(double angulo, double magnitud ){
+        super(angulo,magnitud);
         modoSuma = new SumaVector(this);
-    }
-    
-    public double getMagnitud(){
-        double magnitud = Math.sqrt(Math.pow(getX(),2)+Math.pow(getY(),2));
-        return magnitud;
-    }
+        modoEscalar = new EscalarVector(this);
+    }    
+   
 }

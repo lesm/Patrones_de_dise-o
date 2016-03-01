@@ -37,18 +37,6 @@ public class VectorTest{
     }
     
     @Test
-    public void testGetMagnitud(){
-        Vector vector = new Vector(5F,10F);        
-        assertEquals(11, (int) vector.getMagnitud(),0.001);
-    }
-    
-    @Test
-    public void testDosGetMagnitud(){
-        Vector vector = new Vector(8F,7F);        
-        assertEquals(10, (int) vector.getMagnitud(),0.001);
-    }
-    
-    @Test
     public void testSumarDosVectores(){
         DatoCompuesto vectorUno = new Vector(6F,8F);
         DatoCompuesto vectorDos = new Vector(8F,2F);
@@ -79,6 +67,22 @@ public class VectorTest{
         vector.setNombre("Vector");
         
         assertEquals("Vector 10.0@6.0",vector.imprimir('@'));
+    }
+    
+    @Test
+    public void testMetodoEscalar(){
+        DatoCompuesto vector = new Vector(20F,30F);
+        DatoCompuesto test   = vector.modoEscalar.escalar(5);
+        
+        assertEquals(150,(int) test.getY());
+    }
+    
+    @Test
+    public void testDosMetodoEscalar(){
+        DatoCompuesto vector = new Vector(50F,60F);
+        DatoCompuesto test   = vector.modoEscalar.escalar(3);
+        
+        assertEquals(180,(int) test.getY());
     }
         
 }
