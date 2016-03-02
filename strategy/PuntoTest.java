@@ -107,4 +107,23 @@ public class PuntoTest{
         
     }
     
+    @Test
+    public void testMetodoSimetrico(){
+        DatoCompuesto punto = new Punto(5F,6F);
+        DatoCompuesto test  = punto.modoSimetrico.simetrico();
+        
+        assertEquals(-5,test.getX(),0.001);
+        assertEquals(-6,test.getY(),0.001);
+        
+    }
+    
+    @Test
+    public void testDosMetodoSimetrico(){
+        DatoCompuesto punto = new Punto(15F,16F);
+        DatoCompuesto test  = punto.modoSimetrico.simetrico();
+        
+        assertEquals(-15,test.getX(),0.001);
+        assertEquals(-16,test.getY(),0.001);
+        
+    }
 }
