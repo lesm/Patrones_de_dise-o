@@ -84,5 +84,22 @@ public class VectorTest{
         
         assertEquals(180,(int) test.getY());
     }
+      
+    @Test
+    public void testMetodoSimetrico(){
+        DatoCompuesto vector = new Vector(20F,30F);
+        DatoCompuesto test   = vector.modoSimetrico.simetrico();
         
+        assertEquals(340,(int) test.getX());
+        assertEquals(30,(int) test.getY());
+    }
+    
+    @Test
+    public void testDosMetodoSimetrico(){
+        DatoCompuesto vector = new Vector(50F,80F);
+        DatoCompuesto test   = vector.modoSimetrico.simetrico();
+        
+        assertEquals(310,(int) test.getX());
+        assertEquals(80,(int) test.getY());
+    }
 }

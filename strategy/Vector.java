@@ -11,6 +11,7 @@ public class Vector extends DatoCompuesto{
         super(angulo,magnitud);
         modoSuma = new SumaVector(this);
         modoEscalar = new EscalarVector(this);
+        modoSimetrico = new SimetricoVector(this);
     }    
    
 }
