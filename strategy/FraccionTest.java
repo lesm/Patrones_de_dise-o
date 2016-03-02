@@ -85,4 +85,68 @@ public class FraccionTest{
         assertEquals(3, test.getY(),0.001);
     }
     
+    @Test
+    public void testMetodoSimetrico(){
+        DatoCompuesto fraccion = new Fraccion(5F,6F);
+        DatoCompuesto test     = fraccion.modoSimetrico.simetrico();
+        
+        assertEquals(5,test.getX(),0.001);
+        assertEquals(6,test.getY(),0.001);
+    }
+    
+    @Test
+    public void testDosMetodoSimetrico(){
+        DatoCompuesto fraccion = new Fraccion(4F,2F);
+        DatoCompuesto test     = fraccion.modoSimetrico.simetrico();
+        
+        assertEquals(2,test.getX(),0.001);
+        assertEquals(1, test.getY(),0.001);
+    }
+    
+    @Test
+    public void testTresMetodoSimetrico(){
+        DatoCompuesto fraccion = new Fraccion(16F,4F);
+        DatoCompuesto test     = fraccion.modoSimetrico.simetrico();
+        
+        assertEquals(4,test.getX(),0.001);
+        assertEquals(1, test.getY(),0.001);
+    }
+    
+    @Test
+    public void testCuatroMetodoSimetrico(){
+        DatoCompuesto fraccion = new Fraccion(5F,5F);
+        DatoCompuesto test     = fraccion.modoSimetrico.simetrico();
+        
+        assertEquals(1,test.getX(),0.001);
+        assertEquals(1, test.getY(),0.001);
+    }
+    
+    @Test
+    public void testCincoMetodoSimetrico(){
+        DatoCompuesto fraccion = new Fraccion(100F,100F);
+        DatoCompuesto test     = fraccion.modoSimetrico.simetrico();
+        
+        assertEquals(1,test.getX(),0.001);
+        assertEquals(1, test.getY(),0.001);
+    }
+    
+    @Test
+    public void testSeisMetodoSimetrico(){
+        DatoCompuesto fraccion = new Fraccion(27F,9F);
+        DatoCompuesto test     = fraccion.modoSimetrico.simetrico();
+        
+        assertEquals(3,test.getX(),0.001);
+        assertEquals(1, test.getY(),0.001);
+    }
+    
+    @Test
+    public void testSieteMetodoSimetrico(){
+        DatoCompuesto fraccion = new Fraccion(8F,5F);
+        DatoCompuesto test     = fraccion.modoSimetrico.simetrico();
+        
+        assertEquals(8,test.getX(),0.001);
+        assertEquals(5, test.getY(),0.001);
+    }
+    
+    
 }
