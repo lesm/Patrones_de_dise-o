@@ -14,7 +14,7 @@
 
 #Ignorar carpeta doc generada por Bluej
 
-doc/*
+/strategy/doc/*
 
 #Ignorar archivos *.bluej 
 

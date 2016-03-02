@@ -58,8 +58,7 @@ public class FraccionTest{
         assertTrue(13 == nuevaFraccion.getX() && 3 == nuevaFraccion.getY());
         
     }
-    
-     
+         
     @Test
     public void testImprimir(){
         DatoCompuesto fraccion = new Fraccion(11F,3F);
@@ -67,4 +66,23 @@ public class FraccionTest{
         
         assertEquals("Fracción 11.0/3.0",fraccion.imprimir('/'));
     }
+    
+    @Test
+    public void testMetodoEscalar(){
+        DatoCompuesto fraccion = new Fraccion(5F,6F);
+        DatoCompuesto test     = fraccion.modoEscalar.escalar(5);
+        
+        assertEquals(25,test.getX(),0.001);
+        assertEquals(6, test.getY(),0.001);
+    }
+    
+    @Test
+    public void testDosMetodoEscalar(){
+        DatoCompuesto fraccion = new Fraccion(8F,3F);
+        DatoCompuesto test     = fraccion.modoEscalar.escalar(2);
+        
+        assertEquals(16,test.getX(),0.001);
+        assertEquals(3, test.getY(),0.001);
+    }
+    
 }
