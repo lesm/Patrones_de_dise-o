@@ -148,5 +148,39 @@ public class FraccionTest{
         assertEquals(5, test.getY(),0.001);
     }
     
+    @Test
+    public void testRestaFracciones(){
+        DatoCompuesto fraccionUno = new Fraccion(8F,3F);
+        DatoCompuesto fraccionDos = new Fraccion(5F,3F);
+        
+        DatoCompuesto test;
+        test = fraccionUno.modoResta.restar(fraccionDos);
+        
+        assertEquals(9,test.getX(),0.001);
+        assertEquals(9, test.getY(),0.001);
+    }
     
+    @Test
+    public void testRestaDosFracciones(){
+        DatoCompuesto fraccionUno = new Fraccion(1F,2F);
+        DatoCompuesto fraccionDos = new Fraccion(-1F,2F);
+        
+        DatoCompuesto test;
+        test = fraccionUno.modoResta.restar(fraccionDos);
+        
+        assertEquals(4,test.getX(),0.001);
+        assertEquals(4, test.getY(),0.001);
+    }
+    
+    @Test
+    public void testRestaTresFracciones(){
+        DatoCompuesto fraccionUno = new Fraccion(7F,5F);
+        DatoCompuesto fraccionDos = new Fraccion(3F,6F);
+        
+        DatoCompuesto test;
+        test = fraccionUno.modoResta.restar(fraccionDos);
+        
+        assertEquals(27,test.getX(),0.001);
+        assertEquals(30, test.getY(),0.001);
+    }
 }

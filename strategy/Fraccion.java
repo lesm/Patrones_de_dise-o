@@ -12,5 +12,6 @@ public class Fraccion extends DatoCompuesto{
         modoSuma = new SumaFraccion(this);
         modoEscalar = new EscalarFraccion(this);
         modoSimetrico = new SimetricoFraccion(this);
+        modoResta = new RestaFraccion(this);
     }
 }
