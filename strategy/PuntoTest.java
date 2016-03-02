@@ -126,4 +126,31 @@ public class PuntoTest{
         assertEquals(-16,test.getY(),0.001);
         
     }
+    
+    @Test
+    public void testMetodoRestarDosPunto() {
+        DatoCompuesto puntoUno = new Punto(5F,8F);
+        DatoCompuesto puntoDos = new Punto(2F,5F);
+        
+        DatoCompuesto test;
+        test = puntoUno.modoResta.restar(puntoDos);
+
+        assertEquals(3,test.getX(),0.001);
+        assertEquals(3,test.getY(),0.001);
+       
+    }    
+    
+    @Test
+    public void testDosMetodoRestarDosPunto() {
+        DatoCompuesto puntoUno = new Punto(5F,8F);
+        DatoCompuesto puntoDos = new Punto(12F,15F);
+        
+        DatoCompuesto test;
+        test = puntoUno.modoResta.restar(puntoDos);
+
+        assertEquals(-7,test.getX(),0.001);
+        assertEquals(-7,test.getY(),0.001);
+       
+    }
+     
 }

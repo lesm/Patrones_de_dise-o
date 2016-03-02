@@ -12,6 +12,7 @@ public abstract class DatoCompuesto{
     protected ModoSumar modoSuma;
     protected ModoEscalar modoEscalar;
     protected ModoSimetrico modoSimetrico;
+    protected ModoRestar modoResta;
     private String nombre;
     
     public DatoCompuesto(double x, double y){

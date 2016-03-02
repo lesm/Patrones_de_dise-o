@@ -12,6 +12,7 @@ public class Punto extends DatoCompuesto{
         modoSuma = new SumaPunto(this);
         modoEscalar = new EscalarPunto(this);
         modoSimetrico = new SimetricoPunto(this);
+        modoResta = new RestaPunto(this);
     }   
     
 }
