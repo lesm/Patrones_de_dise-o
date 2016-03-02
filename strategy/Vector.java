@@ -12,6 +12,7 @@ public class Vector extends DatoCompuesto{
         modoSuma = new SumaVector(this);
         modoEscalar = new EscalarVector(this);
         modoSimetrico = new SimetricoVector(this);
+        modoResta = new RestaVector(this);
     }    
    
 }

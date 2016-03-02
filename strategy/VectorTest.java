@@ -102,4 +102,29 @@ public class VectorTest{
         assertEquals(310,(int) test.getX());
         assertEquals(80,(int) test.getY());
     }
+    
+    @Test
+    public void testRestaVectores(){
+        DatoCompuesto vectorUno = new Vector(16F,8F);
+        DatoCompuesto vectorDos = new Vector(8F,5F);
+        
+        DatoCompuesto test;
+        test = vectorUno.modoResta.restar(vectorDos);
+        
+        assertEquals(8,test.getX(),0.001);
+        assertEquals(3,test.getY(),0.001);        
+    }
+    
+    @Test
+    public void testRestaDosVectores(){
+        DatoCompuesto vectorUno = new Vector(15F,9F);
+        DatoCompuesto vectorDos = new Vector(50F,25F);
+        
+        DatoCompuesto test;
+        test = vectorUno.modoResta.restar(vectorDos);
+        
+        assertEquals(-35,test.getX(),0.001);
+        assertEquals(-16,test.getY(),0.001);        
+    }
+   
 }
